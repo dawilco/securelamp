@@ -57,8 +57,7 @@ sudo a2enmod security2
 sudo mv modsecurity.conf /etc/modsecurity/modsecurity.conf
 
 # write protect all the config files so an attacker canoot change them
-chattr +i /etc/php.ini
-chattr +i /etc/php.d/*
-chattr +i /etc/my.cnf
-chattr +i /etc/httpd/conf/httpd.conf
-chattr +i /etc/fail2ban/jail.local
+# sudo chattr +i /etc/php/7.0/apache2/php.ini
+# sudo chattr +i /etc/apache2/apache2.conf
+# sudo chattr +i /etc/fail2ban/jail.local
+# sudo chattr +i /etc/modsecurity/modsecurity.conf
