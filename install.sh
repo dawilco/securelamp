@@ -52,9 +52,9 @@ sudo systemctl start apache2
 sudo mv php.ini /etc/php/7.0/apache2
 
 # Mod_security is a web application firewall (WAF) which can be installed as an additional module for Apache. It can be used to protect the web server from numerous attacks like SQL injections, session hijacking, cross site scripting, bad user agents and many others
-sudo apt-get install libapache2-modsecurity
-sudo a2enmod security2
-sudo mv modsecurity.conf /etc/modsecurity/modsecurity.conf
+# sudo apt-get install libapache2-modsecurity
+# sudo a2enmod security2
+# sudo mv modsecurity.conf /etc/modsecurity/modsecurity.conf
 
 # write protect all the config files so an attacker canoot change them
 # sudo chattr +i /etc/php/7.0/apache2/php.ini
